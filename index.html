@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="barra_menu">
+        <h1 id="perfil">Perfil</h1>
+        <ul class="opciones_menu">
+            <li>Inicio</li>
+            <li>Mi Perfil</li>
+            <li>Encontrar Conexiones</li>
+            <li><button id="log_out">Cerrar Sesión</button></li>
+        </ul>
+    </nav>
+    <main>
+        <aside id="left">
+            <section id="contenedor_tarjeta">
+                <section id="barra_sup"></section>
+                <section class="contenedor_descripcion_perfil">
+                    <img id=imagen_perfil src="img/goku.jpg" alt="goku">
+                    <h2 id="nombre">Son Goku</h2>
+                    <p id="lugar">Planeta Vegetta</p>
+                    <p id="profesion">Luchador de Artes Marciales</p>
+                    <p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nihil repudiandae magnam voluptatibus deserunt eius consequatur ducimus quibusdam, nobis tenetur, quidem illum! Deleniti, nisi voluptate?</p>
+                </section>
+                <section id="boton">
+                    <button>Editar Perfil</button>
+                </section>
+            </section>
+            <section id="contenedor_educacion">
+                <h3 class="encabezado">Educación</h3>
+                <p class="nombre_programa">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="fecha_grado">Lorem ipsum dolor sit amet.</p>
+                <p class="nombre_titulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </section>
+        </aside>
+        <aside id="right">
+            <section id="solicitudes">
+                <h3 class="encabezado">Solicitudes de Conexión</h3>
+                <div id="contenedor_solicitudes">
+                    <div class="perfil_solicitud">
+                        <div class="imagen_y_nombre">
+                            <img src="img/freezer.avif" alt="freezer">
+                            <p>Freezer</p>
+                        </div>
+                        <div class="aceptar_negar">
+                            <button class="sí">✔</button>
+                            <button class="no">X</button>
+                        </div>
+                    </div>
+                    <div class="perfil_solicitud">
+                        <div class="imagen_y_nombre">
+                            <img src="img/dragon_4_estrellas.jpg" alt="4_estrellas">
+                            <p>Cuatro Estrellas</p>
+                        </div>
+                        <div class="aceptar_negar">
+                            <button class="sí">✔</button>
+                            <button class="no">X</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contactos">
+                <h3 id="personas"></h3>
+                <div id="contenedor_personas">
+                    <ul id="contacto_persona">
+                        <li><img class="foto_contacto" src="img/bulma.jpg" alt="bulma">Bulma</li>
+                        <li><img class="foto_contacto" src="img/gohan.jpg" alt="gohan">Gohan</li>
+                        <li><img class="foto_contacto" src="img/goten.avif" alt="goten">Goten</li>
+                        <li><img class="foto_contacto" src="img/milk.jpg" alt="milk">Milk</li>
+                        <li><img class="foto_contacto" src="img/trunks.avif" alt="trunks">Trunks</li>
+                        <li><img class="foto_contacto" src="img/vegeta.jpg" alt="vegeta">Vegeta</li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>
