@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Usuario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <nav id="barra_menu">
@@ -20,7 +22,7 @@
         <aside id="left">
             <section id="contenedor_tarjeta">
                 <section id="barra_sup"></section>
-                <section class="contenedor_descripcion_perfil">
+                <section id="contenedor_descripcion_perfil">
                     <img id=imagen_perfil src="img/goku.jpg" alt="goku">
                     <h2 class="nombre_usuario">Son Goku</h2>
                     <p id="lugar_profesion">Planeta Vegetta</p>
@@ -31,9 +33,11 @@
             </section>
             <section id="contenedor_educacion">
                 <h3 class="encabezado">Educación</h3>
-                <p class="nombre_programa">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p class="fecha_grado">Lorem ipsum dolor sit amet.</p>
-                <p class="nombre_titulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <ul>
+                    <li class="fecha_grado">Lorem ipsum dolor sit amet.</li>
+                    <li class="nombre_titulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <li class="nombre_programa">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
             </section>
         </aside>
         <aside id="right">
@@ -42,28 +46,38 @@
                 <div id="contenedor_solicitudes">
                     <div class="perfil_solicitud">
                         <div class="imagen_y_nombre">
-                            <img src="img/freezer.avif" alt="freezer">
+                            <img class="foto_contacto" src="img/freezer.avif" alt="freezer">
                             <p>Freezer</p>
                         </div>
                         <div class="aceptar_negar">
-                            <button class="sí">✔</button>
+                            <button class="si">✔</button>
                             <button class="no">X</button>
                         </div>
                     </div>
                     <div class="perfil_solicitud">
                         <div class="imagen_y_nombre">
-                            <img src="img/dragon_4_estrellas.jpg" alt="4_estrellas">
+                            <img class="foto_contacto" src="img/freezer.avif" alt="freezer">
+                            <p>Freezer</p>
+                        </div>
+                        <div class="aceptar_negar">
+                            <button class="si">✔</button>
+                            <button class="no">X</button>
+                        </div>
+                    </div>
+                    <div class="perfil_solicitud">
+                        <div class="imagen_y_nombre">
+                            <img class="foto_contacto" src="img/dragon_4_estrellas.jpg" alt="4_estrellas">
                             <p>Cuatro Estrellas</p>
                         </div>
                         <div class="aceptar_negar">
-                            <button class="sí">✔</button>
+                            <button class="si">✔</button>
                             <button class="no">X</button>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="contactos">
-                <h3 id="personas"></h3>
+                <h3 id="personas">Conexiones</h3>
                 <div id="contenedor_personas">
                     <ul id="contacto_persona">
                         <li><img class="foto_contacto" src="img/bulma.jpg" alt="bulma">Bulma</li>
@@ -72,6 +86,8 @@
                         <li><img class="foto_contacto" src="img/milk.jpg" alt="milk">Milk</li>
                         <li><img class="foto_contacto" src="img/trunks.avif" alt="trunks">Trunks</li>
                         <li><img class="foto_contacto" src="img/vegeta.jpg" alt="vegeta">Vegeta</li>
+                        <li><img class="foto_contacto" src="img/vegeta.jpg" alt="vegeta">Vegeta</li>
+
                     </ul>
                 </div>
             </section>
