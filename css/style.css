@@ -7,64 +7,89 @@
     
 }
 
-#barra_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
-    background-color: rgb(45, 45, 45);
-    color: whitesmoke;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    height: 8vh;
-    z-index: 999;
+body{
+    width: 100vw;
+    height: 100vh;
 }
 
-.opciones_menu{
-    height: 100%;
-    display: flex;
-    align-items: center;
+img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
 }
 
 li{
     list-style-type: none;
+    height: fit-content;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    margin: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background-color: lightslategrey;
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+}
+
+header #opciones_menu{
+    height: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+header #opciones_menu .lista_menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
 }
 
 .opcion_menu{
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-
-.opcion_menu a{
-    color: white;
-    text-decoration: none;
+a{
+    padding: 0 10px;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    transition: 0.3s ease background-color;
+    color: white;
+    text-decoration: none;
 }
 
-.opcion_menu a:hover{
+a:hover{
     cursor: pointer;
-    background-color: black;
-    color: #1E90FF;
-}
-
-.button{
-    display: flex;
-    align-items: center;
+    background-color: rgb(101, 111, 121);
 }
 
 #log_out{
-    display: flex;
-    align-items: center;
+    height: fit-content;
+    width: fit-content;
     border-radius:1cm;
-    padding: 2px 10px;
+    padding: 2px 15px;
     background-color: #1E90FF;
     color: whitesmoke;
     border: 1px solid #1E90FF;
     font-weight: 500;
+    transition: 0.3s ease background-color;
+    transition: 0.3s ease color;
 }
 
 #log_out:hover{
@@ -75,203 +100,88 @@ li{
 }
 
 main{
-    margin: 2% 15%;
+    height: 90vh;
     display: flex;
-    flex-flow: row wrap;
-    gap: 1%;
-    height: 82vh;
 }
 
-#left{
-    height: 100%;
-    width: 55%;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1%;
-}
-
-
-#right{
-    height: 100%;
-    width: 44%;
-    display: flex;
-    flex-flow: column;
-    gap: 1%;
-}
-
-#contenedor_tarjeta{
+#tarjeta_perfil{
     position: relative;
-    flex: 6;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    overflow: auto;
-    gap: 25%;
+    padding: 0;
+    flex: 5;
+    gap: 60px;
+    align-content:space-between;
+}
+
+#imagen_perfil{
+    position: absolute;
+    top: 20%;
+    height: 120px;
+    width: 120px;
+    border: 2px solid #7cbdff;
 }
 
 #barra_sup{
-    background-color: #1E90FF;
-    flex:2;
     border-radius: 10px 10px 0 0;
+    height: 35%;
+    width: 100%;
+    background-color: #1E90FF;
 }
-
 
 #contenedor_descripcion_perfil{
-    flex:1;
-    margin: 0 5%;
-}
-
-
-#imagen_perfil{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: 5px solid #87cefa;
-    position: absolute;
-    top: 15%;
-}
-
-.nombre_usuario{
-    color: #1E90FF;
-    font-size: x-large;
-    margin: 10px 0;
     width: 100%;
+    margin: 0 15px 10px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    gap: 15px;
+    align-content: center;
 }
 
-#lugar_profesion{
-    color: rgb(86, 86, 86);
-    font-size: smaller;
-    width: 100%;
-}
-
-#descripcion{
+.informacionChica{
+    color: rgb(77, 77, 77);
     font-size: small;
-    margin: 15px 0;
-    text-align: justify;
+}
+
+.informacionPerfil{
+    font-size: small;
+    width: 100%;
 }
 
 #boton{
-    padding:2px 10px;
-    background-color: lightgray;
-    border: 1px solid lightgrey;
-    border-radius: 1cm;
     font-size: small;
-    color:black;
-    display: flex;
-    flex: 1;
-    margin: 0 0 30px 0;
+    background-color:lightgrey;
+    border: 0;
+    padding: 2px 10px;
+    border-radius: 1cm;
+    color: black;
+    transition: 0.3s ease background-color;
+    transition: 0.3s ease color;
+
 }
 
 #boton:hover{
-    background-color: #1E90FF;
-    color: white;
-    border: 1px solid #1E90FF;
     cursor: pointer;
-}
-
-#contenedor_educacion{
-    overflow: auto;
-    align-content: start;
-    flex: 2;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    overflow: auto;
-    padding: 3%;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 10px;
-}
-
-#encabezado{
-    font-size: medium;
-    width: 100%;
-}
-
-#contenedor_educacion ul{
-    flex:3;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 5px;
+    color: white;
+    background-color: orange;
 }
 
 
-#contenedor_educacion li{
-    font-size: small;
-    height: fit-content;
-    width: 100%;
+.aceptar_negar{
+    height: 100%;
 }
 
-img{
+.boton{
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
-    object-fit: cover;
-}
-
-.foto_contacto{
-    height: 50px;
-    width: 50px;
-}
-
-#solicitudes{
-    overflow: auto;
-    align-content: start;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 3%;
-    gap: 5px;
-    flex: 1.5;
-}
-
-#contenedor_solicitudes{
-    overflow: auto;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    margin: 0 5%;
-    gap: 5px;
-}
-
-#contenedor_solicitudes .perfil_solicitud{
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#contenedor_solicitudes .perfil_solicitud .imagen_y_nombre{
-    display: flex;
-    flex:2;
-    justify-content: start;
-    align-items: center;
-    gap: 2%;
-}
-
-#contenedor_solicitudes .perfil_solicitud .aceptar_negar{
-    display: flex;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .si{
-    border-radius: 100%;
     border: solid #00C853 1px;
-    font-size: 10px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
     color: #00C853;
-    font-weight: bold;
 }
 
 .si:hover{
@@ -280,15 +190,8 @@ img{
     background-color: #00C853;
 }
 .no{
-    border-radius: 100%;
-    border: 0px;
-    font-size: 10px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
     color: #FF0000;
     border: solid #FF0000 1px;
-    font-weight: bold;
 }
 
 .no:hover{
@@ -297,38 +200,97 @@ img{
     background-color: #FF0000;
 }
 
-#contactos{
-    width: 100%;
-    flex:3.5;
+main{
+    padding: 20px 8%;
+    flex-flow: column wrap;
+    gap: 1%;
+}
+
+aside{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+#left{
+    width: 60%;
+    height: 100%;
+}
+
+#right{
+    width: 39%;
+    height: 100%;
+}
+
+.contenedor{
     border-radius: 10px;
     box-shadow: 2px 2px 5px grey;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 3%;
-    gap: 3%;
-    overflow: auto;
-    align-content: start;
-}
-
-h3{
-    width: 100%;
-}
-
-#contenedor_personas{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-}
-
-#contacto_persona{
-    width: 100%;
+    padding: 0 15px;
     gap: 5px;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    overflow: auto;
+    position: relative;
+    align-content: start ;
 }
 
-#contacto_persona li{
+.subcontenedor_chico{
+    flex:1.5;
+}
+
+.subcontenedor_grande{
+    flex: 2.5;
+}
+
+.encabezado{
+    padding: 10px 0 0 0;
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+}
+
+article{
+    width: 100%;
+}
+
+.descripcion{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.usuario{
+    display: flex;
+    width: 100%;
+}
+
+.perfil{
+    align-items: center;
+}
+
+.imagen_y_nombre{
+    flex: 3;
     display: flex;
     align-items: center;
-    gap: 3%;
+    gap: 10px;
 }
+
+p{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+#lista_amigos li{
+    justify-items: start;
+    gap: 10px;
+}
+
+.compatible{
+    display: flex;
+    flex-flow: row wrap;
+} /* compatibilidad para pantalla vertical*/
